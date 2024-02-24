@@ -1,22 +1,11 @@
----
-title: "Typescript  first  Zod  validation"
-seoTitle: "Zod validation "
-datePublished: Sat Feb 24 2024 15:48:27 GMT+0000 (Coordinated Universal Time)
-cuid: clt099smd00010blg36rydu7e
-slug: typescript-first-zod-validation
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1708789696076/b63cd878-98c6-4a08-9a7d-2cde9beabec4.png
-tags: nodejs, typescript, zod
-
----
-
-Zod is a TypeScript-first schema declaration and validation library. It allows you to define schemas for your data and validate them against those schemas.
+## Zod is a TypeScript-first schema declaration and validation library. It allows you to define schemas for your data and validate them against those schemas.
 
 1. **Defining Schemas:**
     
     With Zod, you can define schemas for your data structures
     
 
-```typescript
+```javascript
 import { z } from 'zod';
 
 const userSchema = z.object({
@@ -26,12 +15,12 @@ const userSchema = z.object({
 });
 ```
 
-1. **Validating Data**:
+## 1. **Validating Data**:
     
     Once you have defined your schema, you can use it to validate data objects. If the data object matches the schema, the validation will pass; otherwise, it will throw an error indicating the validation failure.
     
 
-```typescript
+```javascript
 const userData = {
   name: 'Milan katira',
   age: '23',
@@ -46,10 +35,10 @@ try {
 }
 ```
 
-1. **Throw an exception**
+## 2. **Throw an exception**
     
 
-```typescript
+```javascript
 const userData = {
   name: 'Milan katira',
   age: '23',
@@ -64,7 +53,7 @@ try {
 }
 ```
 
-```typescript
+```javascript
 error = [
   {
     code: 'invalid_type',
@@ -80,10 +69,13 @@ error = [
 ];
 ```
 
-**Practical Use Cases**:
+## **Practical Use Cases**:
 
-* **Form Validation**: Zod can validate form data in web applications. You can define a schema that describes the expected structure of the form data and then validate user input against that schema.
+## Form Validation: 
+Zod can validate form data in web applications. You can define a schema that describes the expected structure of the form data and then validate user input against that schema.
     
-* **API Payload Validation**: When building APIs, you often need to validate request payloads. Zod can be used to define schemas for incoming JSON payloads and validate them before processing the requests.
+## API Payload Validation: 
+When building APIs, you often need to validate request payloads. Zod can be used to define schemas for incoming JSON payloads and validate them before processing the requests.
     
-* **Configuration Validation**: In Node.js applications, you might have configuration files that need to be validated before the application starts. Zod can help define schemas for configuration objects and validate them during application initialization.
+## Configuration Validation: 
+In Node.js applications, you might have configuration files that need to be validated before the application starts. Zod can help define schemas for configuration objects and validate them during application initialization.
