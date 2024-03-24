@@ -1,14 +1,3 @@
----
-title: "Next.Js authentication using Lucia"
-seoTitle: "next js authentication"
-seoDescription: "Lucia stands out as a server-side authentication library, designed to simplify session management by abstracting away intricate details. With comprehensive "
-datePublished: Sun Mar 24 2024 06:35:57 GMT+0000 (Coordinated Universal Time)
-cuid: clu55az4z000109l11kfbadjk
-slug: nextjs-authentication-using-lucia
-tags: postgresql, nextjs, lucia, drizzleorm
-
----
-
 **Handling authentication is a complicated yet crucial task. Recognizing the importance of a robust and secure authentication system,** [**Lucia**](https://lucia-auth.com/) **be an excellent solution for your next project. As a lightweight auth library specifically designed for TypeScript, Lucia abstracts the intricacies of managing users and sessions, making the developer’s job significantly easier.**
 
 1. **Ease of Use:** With Lucia's lightweight design and TypeScript support, developers can easily integrate it into their projects and start managing authentication without dealing with intricate details.
